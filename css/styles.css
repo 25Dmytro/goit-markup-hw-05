@@ -500,13 +500,13 @@ border-top: 0px}
     color: #FFF;
     text-align: center;
     /* Button Text */
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     /* 150% */
-    letter-spacing: 0.04px;
+    letter-spacing: 0.04em;
     padding: 8px 24px;
     min-width: 165px;
     height: 40px;
@@ -671,7 +671,7 @@ border-top: 0px}
     align-items: center;
 }
 
-.modal-text-checkbox a {color: #4D5AE5;
+.modal-text-checkbox .privacy-policy-link {color: #4D5AE5;
     /* Link Text */
     font-family: Roboto;
     font-size: 12px;
@@ -680,13 +680,13 @@ border-top: 0px}
     text-decoration-line: underline;
     margin-left: 5px;}
 
-.modal-checkbox-span {display: inline-flex;
+.modal-checkbox-span {
+    display: inline-flex;
     width: 16px;
     height: 16px;
     border: 1px solid #2E2F4266;
     border-radius: 2px;
     margin-right: 8px;
-    display: flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
@@ -695,8 +695,9 @@ border-top: 0px}
 
 .modal-checkbox-input:checked+.modal-text-checkbox .modal-checkbox-span {
     background-color: #404bbf;
-    fill: #fff;
+    fill: currentColor;
     border: none;}
+
 
 /*.modal-checkbox-input:checked + .modal-text-checkbox span {
     background-image: url(../images/check-in-icon.svg);
